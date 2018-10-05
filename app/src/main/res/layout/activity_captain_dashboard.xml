@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:textSize="22sp"
+            android:text="Captain Dashboard"
+            android:textColor="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_gravity="right"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/logout"
+            android:layout_alignParentRight="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="180dp"
+                android:background="@drawable/drawable_bg_with_shadow"
+                android:layout_marginRight="10dp"
+                android:layout_height="180dp">
+                <ImageView
+                    android:id="@+id/docStatusIV"
+                    android:layout_width="100dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/document_status"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorGrey"
+                    android:text="DOCUMENT STATUS"
+                    android:layout_below="@+id/docStatusIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="180dp"
+                android:background="@drawable/drawable_bg_with_shadow"
+                android:layout_marginLeft="10dp"
+                android:layout_height="180dp">
+                <ImageView
+                    android:id="@+id/scheduleIV"
+                    android:layout_width="100dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/schedule"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorGrey"
+                    android:text="DOCUMENT STATUS"
+                    android:layout_below="@+id/scheduleIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="180dp"
+                android:background="@drawable/drawable_bg_with_shadow"
+                android:layout_marginRight="10dp"
+                android:layout_height="180dp">
+                <ImageView
+                    android:id="@+id/pdfIV"
+                    android:layout_width="100dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/pdf"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorGrey"
+                    android:text="DOWNLOAD PDF TICKET"
+                    android:layout_below="@+id/pdfIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="180dp"
+                android:background="@drawable/drawable_bg_with_shadow"
+                android:layout_marginLeft="10dp"
+                android:layout_height="180dp">
+                <ImageView
+                    android:id="@+id/changeCityIV"
+                    android:layout_width="100dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/change_city"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorGrey"
+                    android:text="CHANGE CITY"
+                    android:layout_below="@+id/changeCityIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="180dp"
+                android:background="@drawable/drawable_bg_with_shadow"
+                android:layout_marginRight="10dp"
+                android:layout_height="180dp">
+                <ImageView
+                    android:id="@+id/bankIV"
+                    android:layout_width="100dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bank"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorGrey"
+                    android:text="BANK INFORMATION"
+                    android:layout_below="@+id/bankIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
