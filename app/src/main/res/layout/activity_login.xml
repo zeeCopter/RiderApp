@@ -4,6 +4,7 @@
     android:background="@drawable/bg"
     android:layout_height="match_parent">
     <LinearLayout
+        android:id="@+id/inputPannelLL"
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="wrap_content">
@@ -29,10 +30,12 @@
             android:layout_width="match_parent"
             android:layout_marginLeft="40dp"
             android:orientation="vertical"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="40dp"
             android:layout_height="wrap_content">
             <TextView
                 android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
                 android:text="PHONE NUMBER"
                 android:textColor="@color/colorWhite"
                 android:layout_height="wrap_content" />
@@ -42,9 +45,85 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:layout_width="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/contact_captain"
                     android:layout_height="20dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="123456"
+                    android:inputType="phone"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:text="ENTER PIN CODE"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/contact_captain"
+                    android:layout_height="20dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="123456"
+                    android:inputType="phone"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:layout_height="wrap_content" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="250dp"
+        android:textColor="@color/colorWhite"
+        android:text="SIGNIN"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/grey_btn_rounded_corner"
+        android:layout_below="@+id/inputPannelLL"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite"
+        android:text="FORGET PIN?"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/signInBtn"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/colorWhite"
+        android:text="DON'T HAVE A ACCOUNT?"
+        android:layout_above="@+id/becomeCaptainBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/becomeCaptainBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorWhite"
+        android:text="BECOME A CAPTAIN"
+        android:background="@drawable/red_btn_rounded_corner"
+        android:layout_width="250dp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>
