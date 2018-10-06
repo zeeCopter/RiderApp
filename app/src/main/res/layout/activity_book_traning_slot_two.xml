@@ -70,8 +70,34 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:background="@drawable/congrats_bg"
-                android:layout_height="300dp">
-
+                android:layout_height="320dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:layout_above="@+id/lineIV"
+                    android:layout_centerHorizontal="true"
+                    android:text="THANK YOU FOR REGISTERING"
+                    android:layout_marginBottom="50dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/lineIV"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/colorWhite"
+                    android:layout_height="1dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:layout_below="@+id/lineIV"
+                    android:layout_centerHorizontal="true"
+                    android:text="PLEASE ATTEND YOUR TRANING SESSION AT 2018-01-25 12:00 PM ON FOLLOWING LOCATION"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
             </RelativeLayout>
         </LinearLayout>
     </LinearLayout>

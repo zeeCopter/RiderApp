@@ -21,7 +21,7 @@
             android:layout_toRightOf="@+id/backIV"
             android:layout_marginLeft="20dp"
             android:textSize="22sp"
-            android:text="Book Traning Slot"
+            android:text="Bank Information"
             android:textColor="@color/colorWhite"
             android:layout_centerVertical="true"
             android:layout_width="wrap_content"
@@ -43,7 +43,7 @@
         android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginLeft="20dp"
             android:orientation="vertical"
             android:layout_marginRight="20dp"
@@ -56,7 +56,7 @@
                     android:textSize="18sp"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15sp"
-                    android:text="Step 1: Location*"
+                    android:text="Bank Account Title*"
                     android:textColor="@color/colorGrey"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -69,33 +69,25 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:padding="10dp"
-                android:layout_height="80dp">
+                android:layout_height="60dp">
                 <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_centerInParent="true"
                     android:background="@drawable/drawable_red_outline_rounded"
-                    android:layout_height="match_parent" >
+                    android:layout_height="wrap_content" >
                     <TextView
                         android:layout_width="match_parent"
                         android:padding="10dp"
-                        android:layout_toLeftOf="@+id/downIV"
                         android:gravity="center_vertical"
-                        android:text="R/6-A Sector 8-A PECHS Block 3, Kashmir Raod , Sindh Karachi Pakistan "
-                        android:layout_height="match_parent" />
-                    <ImageView
-                        android:id="@+id/downIV"
-                        android:layout_width="15dp"
-                        android:layout_marginRight="15dp"
-                        android:layout_marginLeft="15dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:background="@drawable/down_arrow_red"
-                        android:layout_height="15dp" />
+                        android:textColor="@color/colorLightestGrey"
+                        android:text="Zeeshan Ahmed"
+                        android:layout_height="wrap_content" />
                 </RelativeLayout>
             </RelativeLayout>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
             android:orientation="vertical"
             android:layout_marginRight="20dp"
@@ -108,7 +100,51 @@
                     android:textSize="18sp"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15sp"
-                    android:text="Step 2: Select Your Traning Slot*"
+                    android:text="IBAN Number*"
+                    android:textColor="@color/colorGrey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorLightestGrey"
+                    android:layout_height="1dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="60dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/drawable_red_outline_rounded"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorLightestGrey"
+                        android:text="1112223334445556667778888"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/drawable_bg_with_shadow"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15sp"
+                    android:text="Bank Name*"
                     android:textColor="@color/colorGrey"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -132,7 +168,8 @@
                         android:padding="10dp"
                         android:layout_toLeftOf="@+id/downOneIV"
                         android:gravity="center_vertical"
-                        android:text="Thu, Jan 25, 2018 12:00PM"
+                        android:textColor="@color/colorLightestGrey"
+                        android:text="HBL"
                         android:layout_height="wrap_content" />
                     <ImageView
                         android:id="@+id/downOneIV"

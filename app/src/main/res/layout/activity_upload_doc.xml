@@ -258,6 +258,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/nextBtn"
         android:text="NEXT"
         android:textColor="@color/colorWhite"
         android:background="@drawable/dark_grey_btn_rounded_corner"
