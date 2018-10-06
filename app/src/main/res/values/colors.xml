@@ -16,5 +16,6 @@
     <color name="colorLightGrey">#999999</color>
     <color name="colorMostLightGrey">#f2f2f2</color>
     <color name="colorLightOffWhite">#fefbf7</color>
+    <color name="colorBG">#F8F8F8</color>
 
 </resources>

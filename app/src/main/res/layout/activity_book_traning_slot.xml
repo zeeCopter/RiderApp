@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorBG"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/topPannelRL"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/backIV"
+            android:background="@drawable/arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_toRightOf="@+id/backIV"
+            android:layout_marginLeft="20dp"
+            android:textSize="22sp"
+            android:text="Book Traning Slot"
+            android:textColor="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_gravity="right"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/logout"
+            android:layout_alignParentRight="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/topPannelRL"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/drawable_bg_with_shadow"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15sp"
+                    android:text="Step 1: Location*"
+                    android:textColor="@color/colorGrey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorLightestGrey"
+                    android:layout_height="1dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="80dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/drawable_red_outline_rounded"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_toLeftOf="@+id/downIV"
+                        android:gravity="center_vertical"
+                        android:text="R/6-A Sector 8-A PECHS Block 3, Kashmir Raod , Sindh Karachi Pakistan "
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/downIV"
+                        android:layout_width="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/down_arrow_red"
+                        android:layout_height="15dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/drawable_bg_with_shadow"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15sp"
+                    android:text="Step 2: Select Your Traning Slot*"
+                    android:textColor="@color/colorGrey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorLightestGrey"
+                    android:layout_height="1dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="60dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/drawable_red_outline_rounded"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_toLeftOf="@+id/downOneIV"
+                        android:gravity="center_vertical"
+                        android:text="Thu, Jan 25, 2018 12:00PM"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/downOneIV"
+                        android:layout_width="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/down_arrow_red"
+                        android:layout_height="15dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:text="NEXT"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/dark_grey_btn_rounded_corner"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

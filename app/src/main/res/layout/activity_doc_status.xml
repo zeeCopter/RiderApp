@@ -2,10 +2,11 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="@color/colorWhite"
+    android:background="@color/colorBG"
     android:layout_height="match_parent">
 
     <RelativeLayout
+        android:id="@+id/topPannelRL"
         android:background="@color/colorPrimary"
         android:layout_width="match_parent"
         android:layout_height="60dp">
@@ -13,9 +14,9 @@
             android:id="@+id/backIV"
             android:background="@drawable/arrow"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:layout_width="30dp"
-            android:layout_height="30dp" />
+            android:layout_marginLeft="20dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
         <TextView
             android:layout_toRightOf="@+id/backIV"
             android:layout_marginLeft="20dp"
@@ -35,5 +36,134 @@
             android:layout_height="35dp" />
     </RelativeLayout>
 
+    <LinearLayout
+        android:layout_below="@+id/topPannelRL"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/drawable_bg_with_shadow"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="60dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:text="Profile Picture"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:text="PENDING"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/drawable_bg_with_shadow"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="60dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:text="National ID"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:text="PENDING"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/drawable_bg_with_shadow"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="60dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:text="National ID Back"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:text="PENDING"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/drawable_bg_with_shadow"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="60dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:text="Driving Licence"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:text="PENDING"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/drawable_bg_with_shadow"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="60dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:text="Driving Licence Back"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:text="PENDING"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
 
+    <Button
+        android:text="NEXT"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/dark_grey_btn_rounded_corner"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </RelativeLayout>
