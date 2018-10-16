@@ -1,9 +1,11 @@
-package com.example.ejaaz.riderapp;
+package com.example.ejaaz.riderapp.Registration;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.example.ejaaz.riderapp.R;
 
 public class BookTraningSlotTwoActicvity extends AppCompatActivity {
 

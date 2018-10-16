@@ -1,4 +1,4 @@
-package com.example.ejaaz.riderapp;
+package com.example.ejaaz.riderapp.Registration;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class BookTraningSlotActivity extends AppCompatActivity {
+import com.example.ejaaz.riderapp.R;
+
+public class DocumentStatusActivity extends AppCompatActivity {
 
     ImageView backIV;
     Button nextBtn;
@@ -15,7 +17,7 @@ public class BookTraningSlotActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_book_traning_slot);
+        setContentView(R.layout.activity_doc_status);
 
         backIV = findViewById(R.id.backIV);
         nextBtn = findViewById(R.id.nextBtn);
@@ -30,7 +32,7 @@ public class BookTraningSlotActivity extends AppCompatActivity {
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(BookTraningSlotActivity.this,BookTraningSlotTwoActicvity.class));
+                startActivity(new Intent(DocumentStatusActivity.this,UploadDocumentsActivity.class));
                 finish();
             }
         });

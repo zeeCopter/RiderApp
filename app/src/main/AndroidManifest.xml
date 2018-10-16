@@ -2,6 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ejaaz.riderapp">
 
+    <permission
+        android:name="com.example.ejaaz.riderapp.googlemapsv2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.googlemapsv2.permission.MAPS_RECEIVE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +22,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppThemeNoActionBar">
         </activity>
         <activity android:name=".LoginActivity"
             android:theme="@style/AppThemeNoActionBar">
@@ -19,27 +32,39 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CaptainDashboardActivity"
+        <activity android:name=".Registration.CaptainDashboardActivity"
             android:theme="@style/AppThemeNoActionBar">
         </activity>
-        <activity android:name=".DocumentStatusActivity"
+        <activity android:name=".Registration.DocumentStatusActivity"
             android:theme="@style/AppThemeNoActionBar">
         </activity>
-        <activity android:name=".UploadDocumentsActivity"
+        <activity android:name=".Registration.UploadDocumentsActivity"
             android:theme="@style/AppThemeNoActionBar">
         </activity>
-        <activity android:name=".BookTraningSlotActivity"
+        <activity android:name=".Registration.BookTraningSlotActivity"
             android:theme="@style/AppThemeNoActionBar">
         </activity>
-        <activity android:name=".BookTraningSlotTwoActicvity"
+        <activity android:name=".Registration.BookTraningSlotTwoActicvity"
             android:theme="@style/AppThemeNoActionBar">
         </activity>
-        <activity android:name=".ChangeCityActivity"
+        <activity android:name=".Registration.ChangeCityActivity"
             android:theme="@style/AppThemeNoActionBar">
         </activity>
-        <activity android:name=".BankInfoActivity"
+        <activity android:name=".Registration.BankInfoActivity"
             android:theme="@style/AppThemeNoActionBar">
         </activity>
+        <activity android:name=".AcceptRequestActivity"
+            android:theme="@style/AppThemeNoActionBar">
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCzvsNnr1kYCfUIT2BDSohYq9qLkP5iwJI"/>
+
     </application>
 
 </manifest>

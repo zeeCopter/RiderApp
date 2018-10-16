@@ -1,18 +1,330 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:id="@+id/topPannelRL"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/backIV"
+            android:background="@drawable/ic_dehaze"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_toRightOf="@+id/backIV"
+            android:layout_marginLeft="20dp"
+            android:textSize="22sp"
+            android:id="@+id/topHeadingTV"
+            android:text="Free"
+            android:textColor="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/cancelTV"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:text="Cancel"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_below="@+id/topPannelRL"
+        android:id="@+id/arrivedTopLL"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/drawable_bg_with_shadow"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorGrey"
+                android:text="Status"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/packageOnBoardTV"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:text="Package on Board"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/arrivedLL"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="center"
+            android:background="@drawable/drawable_bg_with_shadow"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="Estimated Time For Arrival"
+                android:layout_marginLeft="15dp"
+                android:textSize="12sp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/colorLightGrey"
+                android:layout_width="match_parent"
+                android:layout_marginRight="15dp"
+                android:gravity="right"
+                android:textSize="18sp"
+                android:text="10 Mins 41 Sec."
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/endRideLL"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="center"
+            android:background="@drawable/drawable_bg_with_shadow"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/colorLightGrey"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="18sp"
+                    android:text="10 Mins 41 Sec."
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Total Time In-Ride"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:textSize="18sp"
+                    android:gravity="right"
+                    android:textColor="@color/colorGrey"
+                    android:text="3.5 KM"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Distance"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/colorGrey"
+                    android:gravity="right"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/payMethodBtn"
+        android:visibility="gone"
+        android:layout_below="@+id/arrivedTopLL"
+        android:layout_margin="5dp"
+        android:text="CUSTOMER WILL PAY IN CASH"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/red_btn_rounded_corner_5dp_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/makeBusyBtn"
+        android:visibility="visible"
+        android:layout_below="@+id/topPannelRL"
+        android:layout_margin="15dp"
+        android:text="MAKE BUSY"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/dark_grey_btn_rounded_corner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_below="@+id/arrivedTopLL"
+        android:layout_above="@id/secondLastRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/firstLastRL"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/drawable_bg_with_shadow"
+        android:layout_alignParentBottom="true"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/carIV"
+            android:layout_width="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/car"
+            android:layout_height="40dp" />
+        <LinearLayout
+            android:layout_toRightOf="@id/carIV"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorGrey"
+                android:textSize="16sp"
+                android:text="Zeeshan-12345"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:text="2.3"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="D919148"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/secondLastRL"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <RelativeLayout
+            android:id="@+id/arrivedForPickUpRL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_above="@+id/buttonsLL"
+                android:background="@drawable/drawable_bg_with_shadow"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/direction"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="DIRECTIONS"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:text="Destinations"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp"
+                        android:text="Dolmen Mall Tariq Road, Karachi"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/buttonsLL"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/btnLL"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/arrivedBtn"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/drawable_dark_grey_outline_rounded"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorGrey"
+                        android:text="ARRIVED FOR PICKUP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/cancelBtn"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/dark_grey_btn_rounded_corner"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:text="CANCEL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/endRideBtn"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="END RIDE"
+                    android:background="@drawable/dark_grey_btn_rounded_corner"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

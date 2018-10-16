@@ -1,23 +1,26 @@
-package com.example.ejaaz.riderapp;
+package com.example.ejaaz.riderapp.Registration;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class ChangeCityActivity extends AppCompatActivity {
+import com.example.ejaaz.riderapp.R;
+
+public class BookTraningSlotActivity extends AppCompatActivity {
 
     ImageView backIV;
-    Button changeCityBtn;
+    Button nextBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_change_city);
+        setContentView(R.layout.activity_book_traning_slot);
 
         backIV = findViewById(R.id.backIV);
-        changeCityBtn = findViewById(R.id.changeCityBtn);
+        nextBtn = findViewById(R.id.nextBtn);
 
         backIV.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,9 +29,10 @@ public class ChangeCityActivity extends AppCompatActivity {
             }
         });
 
-        changeCityBtn.setOnClickListener(new View.OnClickListener() {
+        nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startActivity(new Intent(BookTraningSlotActivity.this,BookTraningSlotTwoActicvity.class));
                 finish();
             }
         });

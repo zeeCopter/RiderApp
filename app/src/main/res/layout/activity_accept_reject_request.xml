@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/topPannelRL"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/backIV"
+            android:background="@drawable/arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_toRightOf="@+id/backIV"
+            android:layout_marginLeft="20dp"
+            android:textSize="22sp"
+            android:text="Package Details"
+            android:textColor="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/topPannelRL"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_weight="1.2"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="3"
+                android:layout_height="100dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="30dp"
+                    android:text="1.2x"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/add"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:text="RS 12"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                android:text="APPROX. TRAVEL TIME : 15 MINS"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/greenCircleIV"
+                android:layout_width="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/drawable_green_circle"
+                android:layout_height="20dp" />
+            <ImageView
+                android:id="@+id/lineIV"
+                android:layout_width="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorGreen"
+                android:layout_marginLeft="29dp"
+                android:layout_below="@+id/greenCircleIV"
+                android:layout_height="50dp" />
+            <ImageView
+                android:layout_below="@+id/lineIV"
+                android:layout_width="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/location_drop_red"
+                android:layout_height="20dp" />
+            <LinearLayout
+                android:id="@+id/upperLL"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/greenCircleIV"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/colorLightGrey"
+                    android:text="Pick From"
+                    android:textSize="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/colorGrey"
+                    android:text="Tariq Road"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/colorGrey"
+                    android:text="243 Joanie Pine"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/upperLL"
+                android:id="@+id/lowerLL"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/greenCircleIV"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/colorLightGrey"
+                    android:text="Drop Off"
+                    android:textSize="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/colorGrey"
+                    android:text="Saddar Town"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/colorGrey"
+                    android:text="8753 Maurico Walks"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            
+            <TextView
+                android:id="@+id/businessCarTV"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/lowerLL"
+                android:text="Business Car"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/payMethodRL"
+                android:layout_below="@+id/businessCarTV"
+                android:background="@drawable/drawable_bg_with_shadow"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/cashIV"
+                    android:layout_width="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/cash"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Cash"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/cashIV"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Change"
+                    android:textColor="@color/colorLightGrey"
+                    android:textSize="12sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/payMethodRL"
+                android:layout_above="@+id/timerTV"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/acceptBtn"
+                        android:layout_weight="1"
+                        android:background="@drawable/drawable_dark_grey_outline_rounded"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorGrey"
+                        android:text="ACCEPT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/rejectBtn"
+                        android:layout_weight="1"
+                        android:background="@drawable/dark_grey_btn_rounded_corner"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:text="REJECT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/timerTV"
+                android:layout_width="match_parent"
+                android:layout_above="@id/lastLL"
+                android:textSize="12sp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="0 Sec"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/lastLL"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_height="5dp">
+                <ImageView
+                    android:id="@+id/countOneIV"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/countTwoIV"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/countThreeIV"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/countFourIV"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/countFiveIV"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/countSixIV"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/countSevenIV"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/countEightIV"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/countNineIV"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/countTenIV"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
